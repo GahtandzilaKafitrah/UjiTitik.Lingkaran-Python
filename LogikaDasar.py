@@ -17,7 +17,7 @@ print()
 # User Input
 def userinput():
     a = input("Pernyataan P (B/S) : ")
-    b = input("Operator logika (^/v/->/-->) : ")
+    b = input("Operator logika (^/v/->/<->) : ")
     c = input("Pernyataan Q (B/S) : ")
     print(f"{'P' : <10} {'Q' : <10} {'Operator' : <10} {'Nilai' : <10}")
     print("-" * 60)
@@ -46,13 +46,13 @@ def userinput():
     elif a == "S" and b == "->" and c == "S":
         print(f"{'S' : <10} {'S' : <10} {'->' : <10} {'Benar' : <10}")
     elif a == "B" and b == "-->" and c == "B":
-        print(f"{'B' : <10} {'B' : <10} {'-->' : <10} {'Benar' : <10}")
+        print(f"{'B' : <10} {'B' : <10} {'<->' : <10} {'Benar' : <10}")
     elif a == "B" and b =="-->" and c == "S":
-        print(f"{'B' : <10} {'S' : <10} {'-->' : <10} {'Salah' : <10}")
+        print(f"{'B' : <10} {'S' : <10} {'<->' : <10} {'Salah' : <10}")
     elif a == "S" and b == "-->" and c == "B":
-        print(f"{'S' : <10} {'B' : <10} {'-->' : <10} {'Salah' : <10}")
+        print(f"{'S' : <10} {'B' : <10} {'<->' : <10} {'Salah' : <10}")
     elif a == "S" and b == "-->" and c == "S":
-        print(f"{'S' : <10} {'S' : <10} {'-->' : <10} {'Benar' : <10}")
+        print(f"{'S' : <10} {'S' : <10} {'<->' : <10} {'Benar' : <10}")
     else:
         print("Mohon Masukkan sesuai perintah !!!\n")
 
